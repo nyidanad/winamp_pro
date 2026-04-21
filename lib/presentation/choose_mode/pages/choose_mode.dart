@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:winamp_pro/core/configs/assets/app_images.dart';
 import 'package:winamp_pro/core/configs/assets/app_vectors.dart';
+import 'package:winamp_pro/presentation/auth/pages/signup_or_signin.dart';
 import 'package:winamp_pro/presentation/choose_mode/bloc/theme_cubit.dart';
 
 import '../../../common/widgets/button/basic_app_button.dart';
@@ -46,7 +47,7 @@ class ChooseModePage extends StatelessWidget {
                 Align(
                   alignment: Alignment.topCenter,
                   child: SvgPicture.asset(
-                    AppVectors.logoWhite,
+                    AppVectors.logo,
                     width: 60,
                     height: 60,
                   ),
@@ -146,7 +147,7 @@ class ChooseModePage extends StatelessWidget {
                     Navigator.push(
                       context, 
                       MaterialPageRoute(
-                        builder: (BuildContext context) => const ChooseModePage()
+                        builder: (BuildContext context) => const SignupOrSigninPage()
                       )
                     );
                   }, 

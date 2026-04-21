@@ -43,7 +43,7 @@ class GetStartedPage extends StatelessWidget {
                 Align(
                   alignment: Alignment.topCenter,
                   child: SvgPicture.asset(
-                    AppVectors.logoWhite,
+                    AppVectors.logo,
                     width: 60,
                     height: 60,
                   ),
