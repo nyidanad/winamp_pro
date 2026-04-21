@@ -4,6 +4,7 @@ import 'package:winamp_pro/common/widgets/button/basic_app_button.dart';
 import 'package:winamp_pro/core/configs/assets/app_images.dart';
 import 'package:winamp_pro/core/configs/assets/app_vectors.dart';
 import 'package:winamp_pro/core/configs/theme/app_colors.dart';
+import 'package:winamp_pro/presentation/choose_mode/pages/choose_mode.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});
@@ -26,6 +27,17 @@ class GetStartedPage extends StatelessWidget {
                 )
               )
             ),
+          ),
+
+          Container(
+            color: Colors.black.withOpacity(0.15),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: 40,
+              horizontal: 40,
+            ),
             child: Column(
               children: [
                 Align(
@@ -40,33 +52,35 @@ class GetStartedPage extends StatelessWidget {
                 Text(
                   'Enjoy Listening To Music',
                   style: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 28,
+                    fontSize: 32,
                   ),
                 ),
-                SizedBox(height: 21,),
+                SizedBox(height: 21, width: 50,),
                 Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dalore magna aliqua.',
+                  'Enjoy seamless listening with${'\n'}high-quality sound, personalized recommendations,${'\n'}and unlimited access to the music you love.',
                   style: TextStyle(
+                    fontWeight: FontWeight.w500,
                     color: AppColors.grey,
-                    fontSize: 13,
+                    fontSize: 16,
                   ),
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 20,),
+                SizedBox(height: 40,),
                 BasicAppButton(
                   onPressed: () {
-                    
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => const ChooseModePage()
+                      )
+                    );
                   }, 
                   title: 'Get Started'
                 )
               ],
             ),
-          ),
-
-          Container(
-            color: Colors.black.withOpacity(0.15),
           )
         ],
       )
