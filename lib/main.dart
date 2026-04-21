@@ -8,6 +8,7 @@ import 'package:winamp_pro/core/configs/theme/app_theme.dart';
 import 'package:winamp_pro/firebase_options.dart';
 import 'package:winamp_pro/presentation/choose_mode/bloc/theme_cubit.dart';
 import 'package:winamp_pro/presentation/splash/pages/splash.dart';
+import 'package:winamp_pro/service_locator.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +21,9 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform
   );
+
+  await initilizeDependencies();
+
   runApp(const MyApp());
 }
 
