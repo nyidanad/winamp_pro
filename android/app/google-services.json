@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "762702355526",
+    "firebase_url": "https://winampro-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "winampro",
+    "storage_bucket": "winampro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762702355526:android:32cc4b9bc29ea140c4be47",
+        "android_client_info": {
+          "package_name": "com.example.winamp_pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgy43O9BwgfEbYxkJDX7l8mBTW6VLt95s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
