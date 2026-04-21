@@ -6,6 +6,8 @@ import 'package:winamp_pro/common/widgets/button/basic_app_button.dart';
 import 'package:winamp_pro/core/configs/assets/app_images.dart';
 import 'package:winamp_pro/core/configs/assets/app_vectors.dart';
 import 'package:winamp_pro/core/configs/theme/app_colors.dart';
+import 'package:winamp_pro/presentation/auth/pages/signin.dart';
+import 'package:winamp_pro/presentation/auth/pages/signup.dart';
 
 class SignupOrSigninPage extends StatelessWidget  {
   const SignupOrSigninPage({super.key});
@@ -81,7 +83,10 @@ class SignupOrSigninPage extends StatelessWidget  {
                         flex: 1,
                         child: BasicAppButton(
                           onPressed: () {
-              
+                            Navigator.push(
+                              context, 
+                              MaterialPageRoute(builder: (BuildContext context) => const SignupPage())
+                            );
                           },
                            title: 'Register'
                         )
@@ -93,7 +98,10 @@ class SignupOrSigninPage extends StatelessWidget  {
                         flex: 1,
                         child: TextButton(
                           onPressed: () {
-                        
+                            Navigator.push(
+                              context, 
+                              MaterialPageRoute(builder: (BuildContext context) => const SigninPage())
+                            );
                           },
                           child: Text(
                             'Login',
