@@ -6,7 +6,7 @@ import 'package:winamp_pro/core/configs/assets/app_vectors.dart';
 import 'package:winamp_pro/data/models/auth/signin_user_req.dart';
 import 'package:winamp_pro/domain/usecases/auth/signin.dart';
 import 'package:winamp_pro/presentation/auth/pages/signup.dart';
-import 'package:winamp_pro/presentation/root/pages/root.dart';
+import 'package:winamp_pro/presentation/home/pages/home.dart';
 import 'package:winamp_pro/service_locator.dart';
 
 class SigninPage extends StatelessWidget  {
@@ -56,7 +56,7 @@ class SigninPage extends StatelessWidget  {
                   (r){
                     Navigator.pushAndRemoveUntil(
                       context, 
-                      MaterialPageRoute(builder: (BuildContext context) => RootPage()),
+                      MaterialPageRoute(builder: (BuildContext context) => HomePage()),
                       (route) => false
                     );
                   }

@@ -20,7 +20,9 @@ dependencies:
   firebase_core:
   firebase_auth:
   get_it:
+  cloud_firestore:
   dartz:
+  just_audio:
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +38,8 @@ flutter:
     - assets/fonts/
     - assets/images/
     - assets/vectors/
+    - assets/audio/
+    - assets/covers/
 
   fonts:
     - family: Satoshi
